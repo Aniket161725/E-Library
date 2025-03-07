@@ -1,0 +1,63 @@
+/* Full-screen background with a library theme */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://source.unsplash.com/1600x900/?library,bookshelves") no-repeat center center/cover;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Glassmorphism Effect */
+  .content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease-in-out;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Subtitle */
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+  }
+  
+  /* Explore Button */
+  .explore-btn {
+    background: linear-gradient(135deg, #ff6f61, #ff4757);
+    padding: 12px 24px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+  }
+  
+  .explore-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(255, 105, 97, 0.7);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
